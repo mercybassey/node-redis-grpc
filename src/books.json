@@ -1,0 +1,138 @@
+
+[
+  {
+    "id": 1,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "publication_year": "1951",
+    "isbn": "9780316769488",
+    "genre": "Literary Fiction",
+    "description": "A story about teenage alienation and loss of innocence."
+  },
+  {
+    "id": 2,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "publication_year": "1960",
+    "isbn": "9780061120084",
+    "genre": "Southern Gothic Fiction",
+    "description": "A novel about racial injustice in the Deep South."
+  },
+  {
+    "id": 3,
+    "title": "1984",
+    "author": "George Orwell",
+    "publication_year": "1949",
+    "isbn": "9780451524935",
+    "genre": "Dystopian Fiction",
+    "description": "A dystopian novel about totalitarianism and surveillance."
+  },
+  {
+    "id": 4,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "publication_year": "1925",
+    "isbn": "9780743273565",
+    "genre": "Tragedy",
+    "description": "A novel about the American Dream and the Jazz Age."
+  },
+  {
+    "id": 5,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "publication_year": "1813",
+    "isbn": "9780679783268",
+    "genre": "Romance",
+    "description": "A classic tale of love and misunderstanding."
+  },
+  {
+    "id": 6,
+    "title": "Moby-Dick",
+    "author": "Herman Melville",
+    "publication_year": "1851",
+    "isbn": "9780142437247",
+    "genre": "Adventure Fiction",
+    "description": "An epic sea story of Captain Ahab's obsession with a white whale."
+  },
+  {
+    "id": 7,
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "publication_year": "1869",
+    "isbn": "9780307266934",
+    "genre": "Historical Fiction",
+    "description": "A novel that intertwines the lives of families during the Napoleonic Wars."
+  },
+  {
+    "id": 8,
+    "title": "The Odyssey",
+    "author": "Homer",
+    "publication_year": "8th Century BC",
+    "isbn": "9780140268867",
+    "genre": "Epic Poetry",
+    "description": "An ancient Greek epic poem about Odysseus' journey home."
+  },
+  {
+    "id": 9,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "publication_year": "1954",
+    "isbn": "9780544003415",
+    "genre": "Fantasy",
+    "description": "A high-fantasy epic of the quest to destroy the One Ring."
+  },
+  {
+    "id": 10,
+    "title": "The Adventures of Huckleberry Finn",
+    "author": "Mark Twain",
+    "publication_year": "1885",
+    "isbn": "9780486280615",
+    "genre": "Picaresque Fiction",
+    "description": "A novel about the adventures of a boy named Huck on the Mississippi River."
+  },
+  {
+    "id": 11,
+    "title": "Hamlet",
+    "author": "William Shakespeare",
+    "publication_year": "1603",
+    "isbn": "9780521618748",
+    "genre": "Tragedy",
+    "description": "A Shakespearean tragedy about revenge, madness, and moral corruption."
+  },
+  {
+    "id": 12,
+    "title": "One Hundred Years of Solitude",
+    "author": "Gabriel García Márquez",
+    "publication_year": "1967",
+    "isbn": "9780060883287",
+    "genre": "Magical Realism",
+    "description": "A multi-generational story of the Buendía family."
+  },
+  {
+    "id": 13,
+    "title": "The Divine Comedy",
+    "author": "Dante Alighieri",
+    "publication_year": "1320",
+    "isbn": "9780140449266",
+    "genre": "Epic Poetry",
+    "description": "An allegorical tale of Dante's journey through Hell, Purgatory, and Paradise."
+  },
+  {
+    "id": 14,
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "publication_year": "1866",
+    "isbn": "9780486415871",
+    "genre": "Philosophical Fiction",
+    "description": "A novel about the mental anguish of a man who commits a murder."
+  },
+  {
+    "id": 15,
+    "title": "The Catch-22",
+    "author": "Joseph Heller",
+    "publication_year": "1961",
+    "isbn": "9781451626650",
+    "genre": "Satirical Fiction",
+    "description": "A satirical novel about the absurdities of war."
+  }
+]

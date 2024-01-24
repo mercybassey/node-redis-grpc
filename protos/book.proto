@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+service BookCatalog {
+  rpc ListBooks (ListBooksRequest) returns (ListBooksResponse);
+  rpc GetBookDetails (GetBookDetailsRequest) returns (BookDetailsResponse);
+}
+
+message BookInfo {
+  int32 id = 1;               
+  string title = 2;
+  string author = 3;
+  string publication_year = 4;
+} 
+
+message ListBooksRequest {
+  
+}
+
+message ListBooksResponse {
+  string total_books = 1;
+  repeated BookInfo book_info = 2;
+}
+
+message GetBookDetailsRequest {
+  int32 id = 1;        
+}
+
+message BookDetailsResponse {
+  string isbn = 1;
+  string genre = 2;
+  string description = 3;
+}
