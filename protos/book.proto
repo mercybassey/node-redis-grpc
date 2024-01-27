@@ -3,6 +3,7 @@ syntax = "proto3";
 service BookCatalog {
   rpc ListBooks (ListBooksRequest) returns (ListBooksResponse);
   rpc GetBookDetails (GetBookDetailsRequest) returns (BookDetailsResponse);
+  rpc DeleteBook(DeleteBookRequest) returns (DeleteBookResponse);
 }
 
 message BookInfo {
@@ -29,4 +30,12 @@ message BookDetailsResponse {
   string isbn = 1;
   string genre = 2;
   string description = 3;
+}
+
+message DeleteBookRequest {
+  int32 id = 1;
+}
+
+message DeleteBookResponse {
+  string message = 1;
 }

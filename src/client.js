@@ -37,7 +37,19 @@ function getBookDetails(bookId) {
   });
 }
 
-// listBooks()
-getBookDetails(5);
+function deleteBook(bookId) {
+  client.DeleteBook({ id: bookId }, (error, response) => {
+      if (error) {
+          console.error('Error:', error);
+      } else {
+          console.log(response.message);
+      }
+  });
+}
+
+// deleteBook(1); 
+
+// listBooks();
+// getBookDetails(10);
 
 
