@@ -13,7 +13,7 @@ const bookCatalogProto = grpc.loadPackageDefinition(packageDefinition);
 
 const server = new grpc.Server();
 
-const CACHE_TTL = 90; 
+const CACHE_TTL = 120; 
 
 server.addService(bookCatalogProto.BookCatalog.service, {
   ListBooks: listBooks,
@@ -37,7 +37,7 @@ async function readAndCacheBooks() {
       const books = JSON.parse(booksData);
       await redisClient.SETEX('books', CACHE_TTL, JSON.stringify(books));
       for (const book of books) {
-        await redisClient.SETEX(`bookDetails:${book.id}`, CACHE_TTL,JSON.stringify(book));
+        await redisClient.SETEX(`bookDetails:${book.id}`, CACHE_TTL, JSON.stringify(book));
       }
       return books;
   } catch (err) {
