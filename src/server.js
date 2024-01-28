@@ -125,7 +125,7 @@ function getBookDetails(call, callback) {
 
 async function deleteBook(call, callback) {
   const bookId = call.request.id;
-
+  
   try {
     const booksData = fs.readFileSync(BOOKS_JSON_PATH, 'utf-8');
     let books = JSON.parse(booksData);
@@ -140,9 +140,11 @@ async function deleteBook(call, callback) {
     books.splice(bookIndex, 1);
     fs.writeFileSync(BOOKS_JSON_PATH, JSON.stringify(books, null, 2));
 
-    await redisClient.del(`bookDetails:${bookId}`);
-
     await redisClient.del('books');
+    const keys = await redisClient.keys('bookDetails:*');
+    for (const key of keys) {
+      await redisClient.del(key);
+    }
 
     callback(null, { message: 'Book deleted successfully' });
   } catch (err) {
